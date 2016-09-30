@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DxInc.cpp">
+      <Filter>dx</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11Texture.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="dx11_texture_rules.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx11Inc.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="DxgiInc.cpp">
+      <Filter>dx</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11Buffer.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11Context.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11FrameBuffer.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxgiOutput.cpp">
+      <Filter>dx\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxgiAdapter.cpp">
+      <Filter>dx\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11VedioDriver.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxInputDriver.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11Effect.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="venus3d_direct11.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11Vedio.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx11Pass.cpp">
+      <Filter>dx\dx11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInc.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="DxInc.h">
+      <Filter>dx</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11Texture.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="Dx11Inc.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="DxgiInc.h">
+      <Filter>dx</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11Buffer.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11Context.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11FrameBuffer.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxgiOutput.h">
+      <Filter>dx\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxgiAdapter.h">
+      <Filter>dx\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11VedioDriver.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxInputDriver.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11Effect.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="venus3d_direct11.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11Vedio.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx11Pass.h">
+      <Filter>dx\dx11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{750b17d1-a227-4196-b195-162d8b7bc0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx">
+      <UniqueIdentifier>{12c8d766-afef-4d8e-befc-b83bb9a54fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx\dx11">
+      <UniqueIdentifier>{1a1b3fa4-90b2-4ed1-9db6-a1a3e2d2e93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx\dxgi">
+      <UniqueIdentifier>{6d9fcdbd-4a04-4841-b146-f79eadef9b11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<Import Condition="Exists('$(SolutionDir)\$(SolutionName).cpp.default.user.props')" Project="$(SolutionDir)\$(SolutionName).cpp.default.user.props" />
+</Project>

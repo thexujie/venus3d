@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!-- Global -->
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)$(Configuration)_$(Platform)_$(PlatformToolset)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+	
+	<!-- C++ -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+			<AdditionalIncludeDirectories>./</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+		</ClCompile>
+		<Link>
+		</Link>
+  </ItemDefinitionGroup>
+
+	<!-- C++(Debug) -->
+	<ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <MinimalRebuild>true</MinimalRebuild>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>Debug</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<!-- C++(Release) -->
+	<ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<OptimizeReferences>true</OptimizeReferences>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Condition="Exists('$(SolutionDir)\$(SolutionName).props.user')" Project="$(SolutionDir)\$(SolutionName).props.user" />
+</Project>

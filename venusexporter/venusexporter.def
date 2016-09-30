@@ -1,0 +1,7 @@
+LIBRARY venusexporter.dll
+
+EXPORTS
+   DoExport       @1       PRIVATE
+
+SECTIONS
+   .data READ WRITE

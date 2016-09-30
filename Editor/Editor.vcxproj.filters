@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorApp.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorApp3D.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInc.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorApp.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorApp3D.h">
+      <Filter>app</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{6d313690-0127-41b5-9c53-e172ea620252}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

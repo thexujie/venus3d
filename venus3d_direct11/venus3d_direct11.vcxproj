@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4CC57885-09CF-46CF-AD33-6B9932FECA2D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Condition="Exists('$(SolutionDir)\$(SolutionName).cpp.default.props')" Project="$(SolutionDir)\$(SolutionName).cpp.default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <Import Condition="Exists('$(SolutionDir)\$(SolutionName).props')" Project="$(SolutionDir)\$(SolutionName).props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\lib\x86\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\lib\x86\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\lib\x64\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\lib\x64\;</LibraryPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInc.h" />
+    <ClInclude Include="CDx11Context.h" />
+    <ClInclude Include="CDx11Pass.h" />
+    <ClInclude Include="CDx11Vedio.h" />
+    <ClInclude Include="CDx11VedioDriver.h" />
+    <ClInclude Include="CDx11Buffer.h" />
+    <ClInclude Include="CDx11FrameBuffer.h" />
+    <ClInclude Include="CDx11Effect.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CDx11Texture.h" />
+    <ClInclude Include="CDxgiAdapter.h" />
+    <ClInclude Include="CDxgiOutput.h" />
+    <ClInclude Include="CDxInputDriver.h" />
+    <ClInclude Include="Dx11Inc.h" />
+    <ClInclude Include="DxgiInc.h" />
+    <ClInclude Include="DxInc.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="venus3d_direct11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CDx11Context.cpp" />
+    <ClCompile Include="CDx11Pass.cpp" />
+    <ClCompile Include="CDx11Vedio.cpp" />
+    <ClCompile Include="CDx11VedioDriver.cpp" />
+    <ClCompile Include="CDx11Buffer.cpp" />
+    <ClCompile Include="CDx11FrameBuffer.cpp" />
+    <ClCompile Include="CDx11Effect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CDx11Texture.cpp" />
+    <ClCompile Include="CDxgiAdapter.cpp" />
+    <ClCompile Include="CDxgiOutput.cpp" />
+    <ClCompile Include="CDxInputDriver.cpp" />
+    <ClCompile Include="Dx11Inc.cpp" />
+    <ClCompile Include="dx11_texture_rules.cpp" />
+    <ClCompile Include="DxgiInc.cpp" />
+    <ClCompile Include="DxInc.cpp" />
+    <ClCompile Include="venus3d_direct11.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\venus\venus\venus.vcxproj">
+      <Project>{327eadff-ed36-413c-89fe-d9dc08be57be}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\venus\win32\win32.vcxproj">
+      <Project>{97483ee8-2fdd-454c-b382-a1328c27ab3b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

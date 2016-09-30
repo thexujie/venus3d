@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Venus</Keyword>
+    <RootNamespace>ObjectEditor</RootNamespace>
+    <ProjectGuid>{171A98B5-1505-4B5C-9840-0B58D594F212}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Condition="Exists('$(SolutionDir)\$(SolutionName).cpp.default.props')" Project="$(SolutionDir)\$(SolutionName).cpp.default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <Import Condition="Exists('$(SolutionDir)\$(SolutionName).props')" Project="$(SolutionDir)\$(SolutionName).props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link />
+    <Link>
+      <AdditionalManifestDependencies>
+      </AdditionalManifestDependencies>
+    </Link>
+    <Manifest>
+      <InputResourceManifests>
+      </InputResourceManifests>
+    </Manifest>
+    <ClCompile>
+    </ClCompile>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+    </ClCompile>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInc.h" />
+    <ClInclude Include="C3DRenderEngine.h" />
+    <ClInclude Include="C3DRenderEngineDirect.h" />
+    <ClInclude Include="C3DRenderEngineDeffered.h" />
+    <ClInclude Include="C3DSpotLight.h" />
+    <ClInclude Include="C3DScreenRender.h" />
+    <ClInclude Include="CEditorForm.h" />
+    <ClInclude Include="CFileDialog.h" />
+    <ClInclude Include="CIndicator.h" />
+    <ClInclude Include="CKEMesh.h" />
+    <ClInclude Include="CToolForm.h" />
+    <ClInclude Include="dxscene.h" />
+    <ClInclude Include="kemesh.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vescene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C3DRenderEngine.cpp" />
+    <ClCompile Include="C3DRenderEngineDirect.cpp" />
+    <ClCompile Include="C3DRenderEngineDeffered.cpp" />
+    <ClCompile Include="C3DSpotLight.cpp" />
+    <ClCompile Include="C3DScreenRender.cpp" />
+    <ClCompile Include="CEditorForm.cpp" />
+    <ClCompile Include="CFileDialog.cpp" />
+    <ClCompile Include="CIndicator.cpp" />
+    <ClCompile Include="CKEMesh.cpp" />
+    <ClCompile Include="CToolForm.cpp" />
+    <ClCompile Include="kemesh.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dxscene.cpp" />
+    <ClCompile Include="vescene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\venus\venus\venus.vcxproj">
+      <Project>{327eadff-ed36-413c-89fe-d9dc08be57be}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\venus\win32\win32.vcxproj">
+      <Project>{97483ee8-2fdd-454c-b382-a1328c27ab3b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\venus3d_direct11\venus3d_direct11.vcxproj">
+      <Project>{4cc57885-09cf-46cf-ad33-6b9932feca2d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

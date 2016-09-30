@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEditor.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorForm.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CToolForm.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CFileDialog.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CXeSolution.cpp">
+      <Filter>xe</Filter>
+    </ClCompile>
+    <ClCompile Include="CXeResources.cpp">
+      <Filter>xe</Filter>
+    </ClCompile>
+    <ClCompile Include="CXeScene.cpp">
+      <Filter>xe</Filter>
+    </ClCompile>
+    <ClCompile Include="CXeTerrain.cpp">
+      <Filter>xe</Filter>
+    </ClCompile>
+    <ClCompile Include="IXeInc.cpp">
+      <Filter>xe</Filter>
+    </ClCompile>
+    <ClCompile Include="CXeInspectorPanel.cpp">
+      <Filter>xecontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="CIndicator.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CKEMesh.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DScreenRender.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="kemesh.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DSpotLight.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DRenderEngine.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DRenderEngineDeffered.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInc.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorForm.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CToolForm.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CFileDialog.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CXeSolution.h">
+      <Filter>xe</Filter>
+    </ClInclude>
+    <ClInclude Include="CXeResources.h">
+      <Filter>xe</Filter>
+    </ClInclude>
+    <ClInclude Include="CXeScene.h">
+      <Filter>xe</Filter>
+    </ClInclude>
+    <ClInclude Include="CXeTerrain.h">
+      <Filter>xe</Filter>
+    </ClInclude>
+    <ClInclude Include="IXeInc.h">
+      <Filter>xe</Filter>
+    </ClInclude>
+    <ClInclude Include="CXeInspectorPanel.h">
+      <Filter>xecontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="CIndicator.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CKEMesh.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DScreenRender.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="kemesh.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DSpotLight.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DRenderEngine.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DRenderEngineDeffered.h">
+      <Filter>app</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{6d313690-0127-41b5-9c53-e172ea620252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xe">
+      <UniqueIdentifier>{e4d982de-beb8-4a4a-b48d-de2b88b3f390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xecontrol">
+      <UniqueIdentifier>{4e6eef64-c9c8-4f64-96fb-6669892e02e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

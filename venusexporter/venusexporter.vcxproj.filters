@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{b53a5b23-2d99-428a-ab92-d7f34047b441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vmp">
+      <UniqueIdentifier>{ebb08d46-a01e-47e2-a7b8-24b86fc8285a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maxmesh">
+      <UniqueIdentifier>{f247873a-9ee1-47de-81f9-ca14f69099c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseInc.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CVmpExporter.h">
+      <Filter>vmp</Filter>
+    </ClInclude>
+    <ClInclude Include="CVmpWindow.h">
+      <Filter>vmp</Filter>
+    </ClInclude>
+    <ClInclude Include="venusexporter.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="max_tools.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="VmpGenerator.h">
+      <Filter>maxmesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CVmpExporter.cpp">
+      <Filter>vmp</Filter>
+    </ClCompile>
+    <ClCompile Include="CVmpWindow.cpp">
+      <Filter>vmp</Filter>
+    </ClCompile>
+    <ClCompile Include="venusexporter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VmpGenerator.cpp">
+      <Filter>maxmesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="venusexporter.def">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

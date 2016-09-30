@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorForm.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CToolForm.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CFileDialog.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CIndicator.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="CKEMesh.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DScreenRender.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="kemesh.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DSpotLight.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DRenderEngine.cpp">
+      <Filter>app\renderengine</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DRenderEngineDirect.cpp">
+      <Filter>app\renderengine</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DRenderEngineDeffered.cpp">
+      <Filter>app\renderengine</Filter>
+    </ClCompile>
+    <ClCompile Include="dxscene.cpp">
+      <Filter>app\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="vescene.cpp">
+      <Filter>app\dx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseInc.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorForm.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CToolForm.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CFileDialog.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CIndicator.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="CKEMesh.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DScreenRender.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="kemesh.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DSpotLight.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DRenderEngine.h">
+      <Filter>app\renderengine</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DRenderEngineDirect.h">
+      <Filter>app\renderengine</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DRenderEngineDeffered.h">
+      <Filter>app\renderengine</Filter>
+    </ClInclude>
+    <ClInclude Include="dxscene.h">
+      <Filter>app\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="vescene.h">
+      <Filter>app\dx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{6d313690-0127-41b5-9c53-e172ea620252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\renderengine">
+      <UniqueIdentifier>{13424062-bda2-46b8-9892-6a4d54d5182b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\dx">
+      <UniqueIdentifier>{d14fca32-9a21-40eb-a5ae-dfd34ad002bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
